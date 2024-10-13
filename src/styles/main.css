@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Bhai 2", sans-serif;
+  background-color: #f0f2f5;
+}
+
+#img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.mainimg {
+  position: relative;
+}
+
+h1 {
+  font-size: xx-large;
+  position: absolute;
+  top: 28px;
+  right: 645px;
+  color: aliceblue;
+}
+
+.colm1,
+.colm2,
+.colm3,
+.colm4 {
+  height: 50px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 90px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.colm1 {
+  left: 100px;
+}
+
+.colm2 {
+  left: 560px;
+}
+
+.colm3 {
+  right: 560px;
+}
+
+.colm4 {
+  right: 100px;
+}
+
+.mainbox {
+  border: 3px solid rgb(156, 221, 26);
+  border-radius: 20px;
+  opacity: 0.9;
+  width: 420px;
+  height: 420px;
+  background-color: black;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+.mainbox2 {
+  border: 4px solid rgb(156, 221, 26);
+  opacity: 0.9;
+  width: 1210px;
+  height: 420px;
+  background-color: rgb(249, 246, 246);
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input {
+  border-radius: 20px;
+  margin-left: 84px;
+  width: 60px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10 {
+  border-radius: 20px;
+  background-color: aqua;
+  width: 230px;
+  height: 183px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  background-color: rgb(4, 16, 51);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.inputnav {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.resultbox1 {
+  margin-top: -25px;
+  background-color: aqua;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box11,
+.box12,
+.box13,
+.box14,
+.box15,
+.box16 {
+  text-align: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  color: aliceblue;
+  text-align: center;
+  border: 2px solid green;
+  border-radius: 8px;
+  width: 100%;
+  height: 100px;
+  background-color: darkblue;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer .btn {
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: green;
+  color: aliceblue;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer .btn:hover {
+  background-color: darkgreen;
+}
+
+.idnumber {
+  text-align: center;
+  font-size: 17px;
+  background-color: black;
+  color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: large;
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .colm1,
+  .colm2,
+  .colm3,
+  .colm4 {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 10px;
+    margin: 10px 0;
+  }
+
+  .mainbox,
+  .mainbox2 {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 10px;
+    margin: 10px 0;
+  }
+
+  .mainbox2 {
+    flex-direction: column;
+  }
+
+  .resultbox1 {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .footer .btn {
+    margin: 5px 0;
+  }
+}
